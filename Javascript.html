@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Website Content</title>
+</head>
+<body>
+    <p id="secondParagraph">Javascript is ...</p>
+    <button id="secondButton">Append Text</button>
+    <script type="text/javascript">
+        document.getElementById("secondButton").onclick=function(){
+            document.getElementById("secondParagraph").innerHTML="I think"+document.getElementById("secondParagraph").innerHTML+"awesome";
+        }
+    </script>
+    <p id="emptyParagraph"></p>
+    <button id="createParagraph">Create Text</button>
+    <script type="text/javascript">
+        document.getElementById("createParagraph").onclick=function(){
+            document.getElementById("emptyParagraph").innerHTML="<h1>Hi there!</h1>";
+        }
+    </script>
+</body>
+</html>
