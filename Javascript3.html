@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var myArray=new Array();
+        myArray[0]="Pizza";
+        myArray[1]="Chocolate";
+        // alert(myArray[0]);
+        // console.log(myArray);
+        console.log(myArray.length);
+        var tweets=["Morning EveryBody","I love coffee"];
+        tweets.push("Back to Work!");
+        // alert(tweets[1]);
+        // console.log(tweets);
+        tweets.splice(1,1);
+        //console.log(tweets);
+        tweets.splice(1,2);
+        // console.log(tweets);
+        tweets.splice(1,0,"Cornflakes for breakfast");
+        // console.log(tweets);
+        tweets.splice(1,1,"Cornflakes for breakfast");
+        // console.log(tweets);
+        tweets.splice(1,1,"Cornflakes for breakfast","Num num");
+        console.log(tweets);
+    </script>
+</body>
+</html>
