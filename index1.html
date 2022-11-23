@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Form Example</h1>
+    <form>
+        <label>Full Name:</label><br><br>
+        <input type="text" name="Full Name" placeholder="Enter your name"><br><br>
+        <label>Email:</label><br><br>
+        <input type="email" name="email" placeholder="Enter your email"><br><br>
+        <label>Gender:</label><br><br>
+        <input type="radio" name="Gender" value="female">Female
+        <input type="radio" name="Gender" value="Male">Male<br><br>
+        <label>Select Preferences:</label><br><br>
+        <input type="checkbox" name="preferences">Morning
+        <input type="checkbox" name="preferences">Afternoon
+        <input type="checkbox" name="preferences">Evening<br><br>
+        <label>Time Preferences:</label><br><br>
+        <select>
+            <option value="5-10">5AM to 10AM</option>
+            <option value="9-11">9AM to 11AM</option>
+            <option value="10-1">10AM to 1PM</option>
+            <option value="2-6">2PM to 6PM</option>
+            <optgroup label="Choose Timings">
+                <option value="2">2PM</option>
+                <option value="6">6PM</option>
+            </optgroup>
+        </select>
+        <br><br>
+        <button type="submit">Submit</button>
+</form>
+</body>
+</html>
