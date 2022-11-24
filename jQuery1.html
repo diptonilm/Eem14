@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Website Content</title>
+    <style type="text/css">
+        #circle{
+            width: 150px;
+            height: 150px;
+            background-color: green;
+            border-radius: 50%;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="circle"></div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mtDrR7nc-MY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>This is some text!</p>
+    <script src="jQuery-3.6.1.min.js"></script>
+    <script type="text/javascript">
+        //  $("#circle").click(function(){
+            //  $("p").html("This text has changed!")
+            //  alert($("p").html());
+            $("#circle").hover(function(){
+                // $("p").html("This text has changed!");
+                // alert($("p").html());
+                $("iframe").attr("src","https://youtu.be/TSlL1zUBzH4");
+            })
+    </script>
+</body>
+</html>
