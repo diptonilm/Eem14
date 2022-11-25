@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery toggle()</title>
+    <style type="text/css">
+        .d1{
+            border: 1px solid black;
+            width: 250px;
+            padding: 10px;
+        }
+        #toggle{
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="d1">
+        <p><b>This is a little poem: </b><br/>      
+            Twinkle, twinkle, little star<br/>      
+            How I wonder what you are<br/>      
+            Up above the world so high<br/>      
+            Like a diamond in the sky<br/>      
+            Twinkle, twinkle little star<br/>      
+            How I wonder what you are</p>   
+    </div>
+    <button id="toggle">Toggle</button>
+    <script src="jquery-3.6.1.min.js"></script>
+    <script type="text/javascript">
+        $("#toggle").click(function(){
+            $(".d1").toggle();
+        })
+    </script>
+</body>
+</html>
